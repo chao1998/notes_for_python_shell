@@ -19,8 +19,8 @@ for((t=1;t<=4;t++));
 	do{
 		for i in {19..23};
 		do
-		/usr/bin/expect << EOF							##声明expect语法
-		spawn ssh ctgcloud@10.152.0.$i -p1433			##ssh远程连接主机
+		/usr/bin/expect << EOF					
+		spawn ssh ctgcloud@10.152.0.$i -p1433			
 		while 1 {
 					expect {
 							"password:" { send "${password}\n" }
