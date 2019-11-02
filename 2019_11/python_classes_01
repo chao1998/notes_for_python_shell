@@ -1,0 +1,11 @@
+import math
+price_of_house = 100
+good_credit = True
+if good_credit:
+    price_of_house = price_of_house * 0.9
+    price_of_house = math.floor(price_of_house)
+    print("your payment is " + str(price_of_house) + " dollars")
+else:
+    price_of_house = price_of_house * 0.8
+    price_of_house = math.floor(price_of_house)
+    print("your payment is " + str(price_of_house) + " dollars")
